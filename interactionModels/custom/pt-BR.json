@@ -5,48 +5,77 @@
       "intents": [
         {
           "name": "AMAZON.CancelIntent",
-          "samples": []
+          "samples": [
+            "não quero mais saber sobre isso",
+            "não quero mais saber",
+            "cancelar ação",
+            "cancelar"
+          ]
         },
         {
           "name": "AMAZON.HelpIntent",
-          "samples": []
+          "samples": [
+            "o que você pode fazer",
+            "como você pode me ajudar",
+            "o que te perguntar",
+            "o que eu posso te perguntar",
+            "tem como me ajudar",
+            "preciso de ajuda",
+            "você pode me ajudar",
+            "me ajude",
+            "help",
+            "ajuda"
+          ]
         },
         {
           "name": "AMAZON.StopIntent",
-          "samples": []
-        },
-        {
-          "name": "HelloWorldIntent",
-          "slots": [],
           "samples": [
-            "hello",
-            "how are you",
-            "say hi world",
-            "say hi",
-            "hi",
-            "say hello world",
-            "say hello"
+            "parar",
+            "finalizar",
+            "fechar programa",
+            "fechar",
+            "sair",
+            "stop"
           ]
         },
         {
           "name": "AMAZON.NavigateHomeIntent",
-          "samples": []
+          "samples": [
+            "inicio do programa",
+            "home"
+          ]
         },
         {
           "name": "HistoriaIntent",
           "slots": [
             {
               "name": "campeao",
-              "type": "Campeoes"
+              "type": "Campeoes",
+              "samples": [
+                "quero saber sobre {campeao}",
+                "{campeao}"
+              ]
             }
           ],
           "samples": [
-            "historia do {campeao}",
-            "historia de {campeao}",
-            "a história do {campeao}",
-            "a história de {campeao}",
-            "a historia {campeao}",
-            "historia {campeao}"
+            "história",
+            "histórias",
+            "história {campeao}",
+            "histórias {campeao}",
+            "a história",
+            "as histórias",
+            "qual é a história {campeao}",
+            "quais são as histórias {campeao}",
+            "história do {campeao}",
+            "história da {campeao}",
+            "histórias do {campeao}",
+            "histórias da {campeao}",
+            "a história dos campeões",
+            "as histórias dos campeões",
+            "qual é a história do {campeao}",
+            "quais são as histórias do {campeao}",
+            "qual é a história da {campeao}",
+            "quais são as histórias da {campeao}"
           ]
         },
         {
@@ -54,15 +83,295 @@
           "slots": [
             {
               "name": "campeao",
-              "type": "Campeoes"
+              "type": "Campeoes",
+              "samples": [
+                "quero saber as runas da {campeao}",
+                "quero saber as runas do {campeao}",
+                "{campeao}"
+              ]
             }
           ],
           "samples": [
-            "{campeao} runa",
-            "qual runa fazer para {campeao}",
-            "qual runa fazer para o {campeao}",
+            "runa",
+            "runas",
+            "a runa",
+            "as runas",
+            "runa {campeao}",
+            "runas {campeao}",
+            "runa do {campeao}",
+            "runa da {campeao}",
+            "runas do {campeao}",
+            "runas da {campeao}",
+            "a runa recomendada",
+            "as runas recomendadas",
+            "qual é a runa {campeao}",
+            "qual é a runa do {campeao}",
+            "qual é a runa da {campeao}",
+            "quais são as runas {campeao}",
             "runa recomendada {campeao}",
-            "runa {campeao}"
+            "runas recomendadas {campeao}",
+            "quais são as runas do {campeao}",
+            "quais são as runas da {campeao}",
+            "qual é a runa recomendada do {campeao}",
+            "qual é a runa recomendada da {campeao}",
+            "quais são as runas recomendadas do {campeao}",
+            "quais são as runas recomendadas da {campeao}"
+          ]
+        },
+        {
+          "name": "DicasAliadosIntent",
+          "slots": [
+            {
+              "name": "campeao",
+              "type": "Campeoes",
+              "samples": [
+                "quero dicas da {campeao}",
+                "quero dicas do {campeao}",
+                "{campeao}"
+              ]
+            }
+          ],
+          "samples": [
+            "dica",
+            "dicas",
+            "dica {campeao}",
+            "dicas {campeao}",
+            "a dica",
+            "as dicas",
+            "qual é a dica {campeao}",
+            "quais são as dicas {campeao}",
+            "dica do {campeao}",
+            "dica da {campeao}",
+            "dicas do {campeao}",
+            "dicas da {campeao}",
+            "a dica dos campeões",
+            "as dicas dos campeões",
+            "como jogar de {campeao}",
+            "como jogar com {campeao}",
+            "como jogar com a {campeao}",
+            "como jogar com o {campeao}",
+            "me ensine a como jogar de {campeao}",
+            "me ensine a como jogar com {campeao}",
+            "me ensine a como jogar com a {campeao}",
+            "me ensine a como jogar com o {campeao}",
+            "como jogar com o {campeao}",
+            "qual é a dica da {campeao}",
+            "qual é a dica do {campeao}",
+            "quais são as dicas para jogar com o {campeao}",
+            "quais são as dicas para jogar com a {campeao}"
+          ]
+        },
+        {
+          "name": "DicasContraIntent",
+          "slots": [
+            {
+              "name": "campeao",
+              "type": "Campeoes",
+              "samples": [
+                "Quero jogar contra {campeao}",
+                "{campeao}"
+              ]
+            }
+          ],
+          "samples": [
+            "dica contra",
+            "dicas contra",
+            "dica contra {campeao}",
+            "dicas contra {campeao}",
+            "a dica contra",
+            "as dicas contra",
+            "qual é a dica contra {campeao}",
+            "quais são as dicas contra {campeao}",
+            "dica contra o {campeao}",
+            "dica contra a {campeao}",
+            "dicas contra o {campeao}",
+            "dicas contra a {campeao}",
+            "a dica contra campeões",
+            "as dicas contra campeões",
+            "como jogar contra {campeao}",
+            "como jogar contra {campeao}",
+            "como jogar contra o {campeao}",
+            "como jogar contra a {campeao}",
+            "qual é a dica contra o {campeao}",
+            "qual é a dica contra a {campeao}",
+            "quais são as dicas contra o {campeao}",
+            "quais são as dicas contra a {campeao}"
+          ]
+        },
+        {
+          "name": "HabilidadesIntent",
+          "slots": [
+            {
+              "name": "campeao",
+              "type": "Campeoes",
+              "samples": [
+                "quero saber sobre {campeao}",
+                "{campeao}"
+              ]
+            }
+          ],
+          "samples": [
+            "habilidade",
+            "habilidades",
+            "habilidade {campeao}",
+            "habilidades {campeao}",
+            "a habilidade",
+            "as habilidades",
+            "qual é a habilidade {campeao}",
+            "qual é a habilidade do {campeao}",
+            "qual é a habilidade da {campeao}",
+            "quais são as habilidades {campeao}",
+            "habilidade do {campeao}",
+            "habilidade da {campeao}",
+            "habilidades do {campeao}",
+            "habilidades da {campeao}",
+            "qual é a habilidade do campeão",
+            "qual é a habilidade da campeão",
+            "as habilidades dos campeões",
+            "qual é a habilidade do {campeao}",
+            "qual é a habilidade da {campeao}",
+            "quais são as habilidades do {campeao}",
+            "quais são as habilidades da {campeao}",
+            "quais são as habilidades da {campeao}"
+          ]
+        },
+        {
+          "name": "PassivaIntent",
+          "slots": [
+            {
+              "name": "campeao",
+              "type": "Campeoes",
+              "samples": [
+                "{campeao}"
+              ]
+            }
+          ],
+          "samples": [
+            "passiva",
+            "passivas",
+            "passiva {campeao}",
+            "passivas {campeao}",
+            "a passiva",
+            "as passivas",
+            "qual é a passiva {campeao}",
+            "quais são as passivas {campeao}",
+            "passiva do {campeao}",
+            "passiva da {campeao}",
+            "passivas do {campeao}",
+            "passivas da {campeao}",
+            "a passiva dos campeões",
+            "as passivas dos campeões",
+            "qual é a passiva do {campeao}",
+            "qual é a passiva da {campeao}",
+            "quais são as passivas do {campeao}",
+            "quais são as passivas da {campeao}"
+          ]
+        },
+        {
+          "name": "ItemIntent",
+          "slots": [
+            {
+              "name": "item",
+              "type": "Itens",
+              "samples": [
+                "item {item}",
+                "{item}"
+              ]
+            }
+          ],
+          "samples": [
+            "item",
+            "itens",
+            "item {item}",
+            "itens {item}",
+            "me fale sobre o item {item}",
+            "o que faz o item {item}"
+          ]
+        },
+        {
+          "name": "AMAZON.RepeatIntent",
+          "samples": [
+            "repetir",
+            "pode repetir"
+          ]
+        },
+        {
+          "name": "AMAZON.YesIntent",
+          "samples": [
+            "isso mesmo",
+            "si",
+            "sim"
+          ]
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": [
+            "não quero",
+            "no",
+            "não "
+          ]
+        },
+        {
+          "name": "VersaoIntent",
+          "slots": [],
+          "samples": [
+            "versão",
+            "patch",
+            "versão atual",
+            "versão do lol",
+            "versão do sistema",
+            "patch atual",
+            "qual é o patch do lol",
+            "qual é a versão do lol",
+            "qual patch do sistema",
+            "qual é a versão do sistema",
+            "qual é o patch atual do lol",
+            "qual é a versão atual do lol",
+            "qual é o patch atual do sistema",
+            "qual é a versão atual do sistema"
+          ]
+        },
+        {
+          "name": "BuildRecomendada",
+          "slots": [
+            {
+              "name": "campeao",
+              "type": "Campeoes",
+              "samples": [
+                "{campeao}"
+              ]
+            }
+          ],
+          "samples": [
+            "item recomendado {campeao}",
+            "itens recomendado {campeao}",
+            "itens recomendados {campeao}"
+          ]
+        },
+        {
+          "name": "ClasseCampeoes",
+          "slots": [
+            {
+              "name": "campeao",
+              "type": "Campeoes",
+              "samples": [
+                "{campeao}"
+              ]
+            }
+          ],
+          "samples": [
+            "classe",
+            "classificação",
+            "classe {campeao}",
+            "classificação {campeao}",
+            "classe da {campeao}",
+            "classe do {campeao}",
+            "classificação da {campeao}",
+            "classificação do {campeao}",
+            "qual a classe da {campeao}",
+            "qual a classe do {campeao}",
+            "qual a classificação da {campeao}",
+            "qual a classificação do {campeao}"
           ]
         }
       ],
@@ -292,6 +601,12 @@
               }
             },
             {
+              "id": "887",
+              "name": {
+                "value": "Gwen"
+              }
+            },
+            {
               "id": "120",
               "name": {
                 "value": "Hecarim"
@@ -330,7 +645,10 @@
             {
               "id": "59",
               "name": {
-                "value": "JarvanIV"
+                "value": "JarvanIV",
+                "synonyms": [
+                  "Jarvan"
+                ]
               }
             },
             {
@@ -516,7 +834,10 @@
             {
               "id": "62",
               "name": {
-                "value": "MonkeyKing"
+                "value": "MonkeyKing",
+                "synonyms": [
+                  "Wukong"
+                ]
               }
             },
             {
@@ -995,9 +1316,1732 @@
             }
           ],
           "name": "Campeoes"
+        },
+        {
+          "values": [
+            {
+              "id": "1001",
+              "name": {
+                "value": "Botas"
+              }
+            },
+            {
+              "id": "1004",
+              "name": {
+                "value": "Amuleto da Fada"
+              }
+            },
+            {
+              "id": "1006",
+              "name": {
+                "value": "Pérola do Rejuvenescimento"
+              }
+            },
+            {
+              "id": "1011",
+              "name": {
+                "value": "Cinto do Gigante"
+              }
+            },
+            {
+              "id": "1018",
+              "name": {
+                "value": "Capa da Agilidade"
+              }
+            },
+            {
+              "id": "1026",
+              "name": {
+                "value": "Varinha Explosiva"
+              }
+            },
+            {
+              "id": "1027",
+              "name": {
+                "value": "Cristal de Safira"
+              }
+            },
+            {
+              "id": "1028",
+              "name": {
+                "value": "Cristal de Rubi"
+              }
+            },
+            {
+              "id": "1029",
+              "name": {
+                "value": "Couraça de Pano"
+              }
+            },
+            {
+              "id": "1031",
+              "name": {
+                "value": "Cota de Malha"
+              }
+            },
+            {
+              "id": "1033",
+              "name": {
+                "value": "Manto Anula-Magia"
+              }
+            },
+            {
+              "id": "1035",
+              "name": {
+                "value": "Lâmina Cálida"
+              }
+            },
+            {
+              "id": "1036",
+              "name": {
+                "value": "Espada Longa"
+              }
+            },
+            {
+              "id": "1037",
+              "name": {
+                "value": "Picareta"
+              }
+            },
+            {
+              "id": "1038",
+              "name": {
+                "value": "Espada G. p. C."
+              }
+            },
+            {
+              "id": "1039",
+              "name": {
+                "value": "Lâmina Álgida"
+              }
+            },
+            {
+              "id": "1042",
+              "name": {
+                "value": "Adaga"
+              }
+            },
+            {
+              "id": "1043",
+              "name": {
+                "value": "Arco Recurvo"
+              }
+            },
+            {
+              "id": "1052",
+              "name": {
+                "value": "Tomo Amplificador"
+              }
+            },
+            {
+              "id": "1053",
+              "name": {
+                "value": "Cetro Vampírico"
+              }
+            },
+            {
+              "id": "1054",
+              "name": {
+                "value": "Escudo de Doran"
+              }
+            },
+            {
+              "id": "1055",
+              "name": {
+                "value": "Lâmina de Doran"
+              }
+            },
+            {
+              "id": "1056",
+              "name": {
+                "value": "Anel de Doran"
+              }
+            },
+            {
+              "id": "1057",
+              "name": {
+                "value": "Capa Negatron"
+              }
+            },
+            {
+              "id": "1058",
+              "name": {
+                "value": "Bastão Desnecessariamente Grande"
+              }
+            },
+            {
+              "id": "1082",
+              "name": {
+                "value": "Lacre Sombrio"
+              }
+            },
+            {
+              "id": "1083",
+              "name": {
+                "value": "Abatedora"
+              }
+            },
+            {
+              "id": "2003",
+              "name": {
+                "value": "Poção de Vida"
+              }
+            },
+            {
+              "id": "2010",
+              "name": {
+                "value": "Biscoito Total da Determinação Eterna"
+              }
+            },
+            {
+              "id": "2015",
+              "name": {
+                "value": "Estilhaço de Kircheis"
+              }
+            },
+            {
+              "id": "2031",
+              "name": {
+                "value": "Poção com Refil"
+              }
+            },
+            {
+              "id": "2033",
+              "name": {
+                "value": "Poção Corrupta"
+              }
+            },
+            {
+              "id": "2051",
+              "name": {
+                "value": "Berrante do Guardião"
+              }
+            },
+            {
+              "id": "2052",
+              "name": {
+                "value": "Poritos"
+              }
+            },
+            {
+              "id": "2055",
+              "name": {
+                "value": "Sentinela de Controle"
+              }
+            },
+            {
+              "id": "2065",
+              "name": {
+                "value": "Hino Bélico de Shurelya"
+              }
+            },
+            {
+              "id": "2138",
+              "name": {
+                "value": "Elixir de Ferro"
+              }
+            },
+            {
+              "id": "2139",
+              "name": {
+                "value": "Elixir da Feitiçaria"
+              }
+            },
+            {
+              "id": "2140",
+              "name": {
+                "value": "Elixir da Ira"
+              }
+            },
+            {
+              "id": "2403",
+              "name": {
+                "value": "Pulverizador de Tropas"
+              }
+            },
+            {
+              "id": "2419",
+              "name": {
+                "value": "Cronômetro Inicial"
+              }
+            },
+            {
+              "id": "2420",
+              "name": {
+                "value": "Cronômetro"
+              }
+            },
+            {
+              "id": "2421",
+              "name": {
+                "value": "Cronômetro Quebrado"
+              }
+            },
+            {
+              "id": "2422",
+              "name": {
+                "value": "Botas Levemente Mágicas"
+              }
+            },
+            {
+              "id": "2423",
+              "name": {
+                "value": "Cronômetro Perfeitamente Calculado"
+              }
+            },
+            {
+              "id": "2424",
+              "name": {
+                "value": "Cronômetro Quebrado"
+              }
+            },
+            {
+              "id": "3001",
+              "name": {
+                "value": "Máscara Abissal"
+              }
+            },
+            {
+              "id": "3003",
+              "name": {
+                "value": "Cajado do Arcanjo"
+              }
+            },
+            {
+              "id": "3004",
+              "name": {
+                "value": "Manamune"
+              }
+            },
+            {
+              "id": "3006",
+              "name": {
+                "value": "Grevas do Berserker"
+              }
+            },
+            {
+              "id": "3009",
+              "name": {
+                "value": "Botas da Rapidez"
+              }
+            },
+            {
+              "id": "3011",
+              "name": {
+                "value": "Putrificador Quimtec"
+              }
+            },
+            {
+              "id": "3020",
+              "name": {
+                "value": "Sapatos do Feiticeiro"
+              }
+            },
+            {
+              "id": "3024",
+              "name": {
+                "value": "Broquel Glacial"
+              }
+            },
+            {
+              "id": "3026",
+              "name": {
+                "value": "Anjo Guardião"
+              }
+            },
+            {
+              "id": "3031",
+              "name": {
+                "value": "Gume do Infinito"
+              }
+            },
+            {
+              "id": "3033",
+              "name": {
+                "value": "Lembrete Mortal"
+              }
+            },
+            {
+              "id": "3035",
+              "name": {
+                "value": "Último Sussurro"
+              }
+            },
+            {
+              "id": "3036",
+              "name": {
+                "value": "Lembranças do Lorde Dominik"
+              }
+            },
+            {
+              "id": "3040",
+              "name": {
+                "value": "Abraço de Seraph"
+              }
+            },
+            {
+              "id": "3041",
+              "name": {
+                "value": "Ladrão de Almas de Mejai"
+              }
+            },
+            {
+              "id": "3043",
+              "name": {
+                "value": "Muramana"
+              }
+            },
+            {
+              "id": "3044",
+              "name": {
+                "value": "Fago"
+              }
+            },
+            {
+              "id": "3046",
+              "name": {
+                "value": "Dançarina Fantasma"
+              }
+            },
+            {
+              "id": "3047",
+              "name": {
+                "value": "Botas Galvanizadas de Aço"
+              }
+            },
+            {
+              "id": "3048",
+              "name": {
+                "value": "Abraço de Seraph"
+              }
+            },
+            {
+              "id": "3050",
+              "name": {
+                "value": "Convergência de Zeke"
+              }
+            },
+            {
+              "id": "3051",
+              "name": {
+                "value": "Machado Termestre"
+              }
+            },
+            {
+              "id": "3053",
+              "name": {
+                "value": "Sinal de Sterak"
+              }
+            },
+            {
+              "id": "3057",
+              "name": {
+                "value": "Fulgor"
+              }
+            },
+            {
+              "id": "3065",
+              "name": {
+                "value": "Semblante Espiritual"
+              }
+            },
+            {
+              "id": "3066",
+              "name": {
+                "value": "Couraça Lunar Alada"
+              }
+            },
+            {
+              "id": "3067",
+              "name": {
+                "value": "Gema Ardente"
+              }
+            },
+            {
+              "id": "3068",
+              "name": {
+                "value": "Égide de Fogo Solar"
+              }
+            },
+            {
+              "id": "3070",
+              "name": {
+                "value": "Lágrima da Deusa"
+              }
+            },
+            {
+              "id": "3071",
+              "name": {
+                "value": "Cutelo Negro"
+              }
+            },
+            {
+              "id": "3072",
+              "name": {
+                "value": "Sedenta por Sangue"
+              }
+            },
+            {
+              "id": "3074",
+              "name": {
+                "value": "Hidra Raivosa"
+              }
+            },
+            {
+              "id": "3075",
+              "name": {
+                "value": "Armadura de Espinhos"
+              }
+            },
+            {
+              "id": "3076",
+              "name": {
+                "value": "Colete Espinhoso"
+              }
+            },
+            {
+              "id": "3077",
+              "name": {
+                "value": "Tiamat"
+              }
+            },
+            {
+              "id": "3078",
+              "name": {
+                "value": "Força da Trindade"
+              }
+            },
+            {
+              "id": "3082",
+              "name": {
+                "value": "Carapaça do Vigia"
+              }
+            },
+            {
+              "id": "3083",
+              "name": {
+                "value": "Armadura de Warmog"
+              }
+            },
+            {
+              "id": "3085",
+              "name": {
+                "value": "Furacão de Runaan"
+              }
+            },
+            {
+              "id": "3086",
+              "name": {
+                "value": "Zelo"
+              }
+            },
+            {
+              "id": "3089",
+              "name": {
+                "value": "Capuz da Morte de Rabadon"
+              }
+            },
+            {
+              "id": "3091",
+              "name": {
+                "value": "Limite da Razão"
+              }
+            },
+            {
+              "id": "3094",
+              "name": {
+                "value": "Canhão Fumegante"
+              }
+            },
+            {
+              "id": "3095",
+              "name": {
+                "value": "Chuva de Canivete"
+              }
+            },
+            {
+              "id": "3100",
+              "name": {
+                "value": "Perdição de Lich"
+              }
+            },
+            {
+              "id": "3102",
+              "name": {
+                "value": "Véu da Banshee"
+              }
+            },
+            {
+              "id": "3105",
+              "name": {
+                "value": "Égide da Legião"
+              }
+            },
+            {
+              "id": "3107",
+              "name": {
+                "value": "Redenção"
+              }
+            },
+            {
+              "id": "3108",
+              "name": {
+                "value": "Códex Demoníaco"
+              }
+            },
+            {
+              "id": "3109",
+              "name": {
+                "value": "Juramento do Cavaleiro"
+              }
+            },
+            {
+              "id": "3110",
+              "name": {
+                "value": "Coração Congelado"
+              }
+            },
+            {
+              "id": "3111",
+              "name": {
+                "value": "Passos de Mercúrio"
+              }
+            },
+            {
+              "id": "3112",
+              "name": {
+                "value": "Orbe do Guardião"
+              }
+            },
+            {
+              "id": "3113",
+              "name": {
+                "value": "Cintilação Etérea"
+              }
+            },
+            {
+              "id": "3114",
+              "name": {
+                "value": "Ídolo Proibido"
+              }
+            },
+            {
+              "id": "3115",
+              "name": {
+                "value": "Dente de Na\u0027Shor"
+              }
+            },
+            {
+              "id": "3116",
+              "name": {
+                "value": "Cetro de Cristal de Rylai"
+              }
+            },
+            {
+              "id": "3117",
+              "name": {
+                "value": "Botas da Mobilidade"
+              }
+            },
+            {
+              "id": "3123",
+              "name": {
+                "value": "Chamado do Carrasco"
+              }
+            },
+            {
+              "id": "3124",
+              "name": {
+                "value": "Lâmina da Fúria de Guinsoo"
+              }
+            },
+            {
+              "id": "3133",
+              "name": {
+                "value": "Martelo de Guerra de Caulfield"
+              }
+            },
+            {
+              "id": "3134",
+              "name": {
+                "value": "Punhal Serrilhado"
+              }
+            },
+            {
+              "id": "3135",
+              "name": {
+                "value": "Cajado do Vazio"
+              }
+            },
+            {
+              "id": "3139",
+              "name": {
+                "value": "Cimitarra Mercurial"
+              }
+            },
+            {
+              "id": "3140",
+              "name": {
+                "value": "Bandana de Mercúrio"
+              }
+            },
+            {
+              "id": "3142",
+              "name": {
+                "value": "Lâmina Fantasma de Youmuu"
+              }
+            },
+            {
+              "id": "3143",
+              "name": {
+                "value": "Presságio de Randuin"
+              }
+            },
+            {
+              "id": "3145",
+              "name": {
+                "value": "Alternador Hextec"
+              }
+            },
+            {
+              "id": "3152",
+              "name": {
+                "value": "Explocinturão Hextec"
+              }
+            },
+            {
+              "id": "3153",
+              "name": {
+                "value": "Espada do Rei Destruído"
+              }
+            },
+            {
+              "id": "3155",
+              "name": {
+                "value": "Hexdrinker"
+              }
+            },
+            {
+              "id": "3156",
+              "name": {
+                "value": "Mandíbula de Malmortius"
+              }
+            },
+            {
+              "id": "3157",
+              "name": {
+                "value": "Ampulheta de Zhonya"
+              }
+            },
+            {
+              "id": "3158",
+              "name": {
+                "value": "Botas Ionianas da Lucidez"
+              }
+            },
+            {
+              "id": "3165",
+              "name": {
+                "value": "Morellonomicon"
+              }
+            },
+            {
+              "id": "3177",
+              "name": {
+                "value": "Lâmina do Guardião"
+              }
+            },
+            {
+              "id": "3179",
+              "name": {
+                "value": "Glaive Sombria"
+              }
+            },
+            {
+              "id": "3181",
+              "name": {
+                "value": "Lâmina Sanguinária"
+              }
+            },
+            {
+              "id": "3184",
+              "name": {
+                "value": "Martelo do Guardião"
+              }
+            },
+            {
+              "id": "3190",
+              "name": {
+                "value": "Medalhão dos Solari de Ferro"
+              }
+            },
+            {
+              "id": "3191",
+              "name": {
+                "value": "Armaguarda da Caçadora"
+              }
+            },
+            {
+              "id": "3193",
+              "name": {
+                "value": "Placa Gargolítica"
+              }
+            },
+            {
+              "id": "3211",
+              "name": {
+                "value": "Capuz do Espectro"
+              }
+            },
+            {
+              "id": "3222",
+              "name": {
+                "value": "Bênção de Mikael"
+              }
+            },
+            {
+              "id": "3330",
+              "name": {
+                "value": "Efígie do Espantalho"
+              }
+            },
+            {
+              "id": "3340",
+              "name": {
+                "value": "Sentinela Invisível"
+              }
+            },
+            {
+              "id": "3363",
+              "name": {
+                "value": "Alteração Vidente"
+              }
+            },
+            {
+              "id": "3364",
+              "name": {
+                "value": "Lente do Oráculo"
+              }
+            },
+            {
+              "id": "3400",
+              "name": {
+                "value": "Sua Parte"
+              }
+            },
+            {
+              "id": "3504",
+              "name": {
+                "value": "Turíbulo Ardente"
+              }
+            },
+            {
+              "id": "3508",
+              "name": {
+                "value": "Colhedor de Essência"
+              }
+            },
+            {
+              "id": "3513",
+              "name": {
+                "value": "Olho do Arauto"
+              }
+            },
+            {
+              "id": "3600",
+              "name": {
+                "value": "Lança Negra da Kalista"
+              }
+            },
+            {
+              "id": "3742",
+              "name": {
+                "value": "Couraça do Defunto"
+              }
+            },
+            {
+              "id": "3748",
+              "name": {
+                "value": "Hidra Titânica"
+              }
+            },
+            {
+              "id": "3801",
+              "name": {
+                "value": "Braçadeira Cristalina"
+              }
+            },
+            {
+              "id": "3802",
+              "name": {
+                "value": "Capítulo Perdido"
+              }
+            },
+            {
+              "id": "3814",
+              "name": {
+                "value": "Limiar da Noite"
+              }
+            },
+            {
+              "id": "3850",
+              "name": {
+                "value": "Gume do Ladrão Arcano"
+              }
+            },
+            {
+              "id": "3851",
+              "name": {
+                "value": "Presas Gélidas"
+              }
+            },
+            {
+              "id": "3853",
+              "name": {
+                "value": "Estilhaço de Gelo Verdadeiro"
+              }
+            },
+            {
+              "id": "3854",
+              "name": {
+                "value": "Guarda-ombros de Aço"
+              }
+            },
+            {
+              "id": "3855",
+              "name": {
+                "value": "Espaldeiras de Aço Rúnico"
+              }
+            },
+            {
+              "id": "3857",
+              "name": {
+                "value": "Ombreiras de Pedralva"
+              }
+            },
+            {
+              "id": "3858",
+              "name": {
+                "value": "Escudo Relicário"
+              }
+            },
+            {
+              "id": "3859",
+              "name": {
+                "value": "Broquel de Targon"
+              }
+            },
+            {
+              "id": "3860",
+              "name": {
+                "value": "Bastião da Montanha"
+              }
+            },
+            {
+              "id": "3862",
+              "name": {
+                "value": "Foice Espectral"
+              }
+            },
+            {
+              "id": "3863",
+              "name": {
+                "value": "Tormento Crescente"
+              }
+            },
+            {
+              "id": "3864",
+              "name": {
+                "value": "Foice da Névoa Negra"
+              }
+            },
+            {
+              "id": "3916",
+              "name": {
+                "value": "Orbe do Oblívio"
+              }
+            },
+            {
+              "id": "4005",
+              "name": {
+                "value": "Mandato Imperial"
+              }
+            },
+            {
+              "id": "4401",
+              "name": {
+                "value": "Força da Natureza"
+              }
+            },
+            {
+              "id": "4403",
+              "name": {
+                "value": "A Espátula Dourada"
+              }
+            },
+            {
+              "id": "4628",
+              "name": {
+                "value": "Foco do Horizonte"
+              }
+            },
+            {
+              "id": "4629",
+              "name": {
+                "value": "Ímpeto Cósmico"
+              }
+            },
+            {
+              "id": "4630",
+              "name": {
+                "value": "Joia da Ruína"
+              }
+            },
+            {
+              "id": "4632",
+              "name": {
+                "value": "Barreira Verdejante"
+              }
+            },
+            {
+              "id": "4633",
+              "name": {
+                "value": "Criafendas"
+              }
+            },
+            {
+              "id": "4635",
+              "name": {
+                "value": "Olhar Sanguessuga"
+              }
+            },
+            {
+              "id": "4636",
+              "name": {
+                "value": "Colhedor Noturno"
+              }
+            },
+            {
+              "id": "4637",
+              "name": {
+                "value": "Abraço Demoníaco"
+              }
+            },
+            {
+              "id": "4638",
+              "name": {
+                "value": "Pedra-vigia Observadora"
+              }
+            },
+            {
+              "id": "4641",
+              "name": {
+                "value": "Pedra-vigia Inspiradora"
+              }
+            },
+            {
+              "id": "4642",
+              "name": {
+                "value": "Espelho de Bandópolis"
+              }
+            },
+            {
+              "id": "4643",
+              "name": {
+                "value": "Pedra-vigia Vigilante"
+              }
+            },
+            {
+              "id": "6029",
+              "name": {
+                "value": "Chicote Ferrifarpo"
+              }
+            },
+            {
+              "id": "6035",
+              "name": {
+                "value": "Alvorada de Pratânia"
+              }
+            },
+            {
+              "id": "6333",
+              "name": {
+                "value": "Dança da Morte"
+              }
+            },
+            {
+              "id": "6609",
+              "name": {
+                "value": "Serrespada Quimiopunk"
+              }
+            },
+            {
+              "id": "6616",
+              "name": {
+                "value": "Cajado Aquafluxo"
+              }
+            },
+            {
+              "id": "6617",
+              "name": {
+                "value": "Regenerador de Pedra Lunar"
+              }
+            },
+            {
+              "id": "6630",
+              "name": {
+                "value": "Hemodrenário"
+              }
+            },
+            {
+              "id": "6631",
+              "name": {
+                "value": "Quebrapassos"
+              }
+            },
+            {
+              "id": "6632",
+              "name": {
+                "value": "Ruptor Divino"
+              }
+            },
+            {
+              "id": "6653",
+              "name": {
+                "value": "Angústia de Liandry"
+              }
+            },
+            {
+              "id": "6655",
+              "name": {
+                "value": "Tormenta de Luden"
+              }
+            },
+            {
+              "id": "6656",
+              "name": {
+                "value": "Glacieterno"
+              }
+            },
+            {
+              "id": "6660",
+              "name": {
+                "value": "Brasa de Bami"
+              }
+            },
+            {
+              "id": "6662",
+              "name": {
+                "value": "Manopla do Raio de Gelo"
+              }
+            },
+            {
+              "id": "6664",
+              "name": {
+                "value": "Quimiotanque Turbo"
+              }
+            },
+            {
+              "id": "6670",
+              "name": {
+                "value": "Aljava Vespertina"
+              }
+            },
+            {
+              "id": "6671",
+              "name": {
+                "value": "Força do Vendaval"
+              }
+            },
+            {
+              "id": "6672",
+              "name": {
+                "value": "Mata-Cráquens"
+              }
+            },
+            {
+              "id": "6673",
+              "name": {
+                "value": "Arco-escudo Imortal"
+              }
+            },
+            {
+              "id": "6675",
+              "name": {
+                "value": "Adagas Rápidas Navori"
+              }
+            },
+            {
+              "id": "6676",
+              "name": {
+                "value": "A Coletora"
+              }
+            },
+            {
+              "id": "6677",
+              "name": {
+                "value": "Faca da Fúria"
+              }
+            },
+            {
+              "id": "6691",
+              "name": {
+                "value": "Crepúsculo de Draktharr"
+              }
+            },
+            {
+              "id": "6692",
+              "name": {
+                "value": "Eclipse"
+              }
+            },
+            {
+              "id": "6693",
+              "name": {
+                "value": "Garra do Espreitador"
+              }
+            },
+            {
+              "id": "6694",
+              "name": {
+                "value": "Rancor de Serylda"
+              }
+            },
+            {
+              "id": "6695",
+              "name": {
+                "value": "Presa da Serpente"
+              }
+            }
+          ],
+          "name": "Itens"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "os"
+              }
+            },
+            {
+              "name": {
+                "value": "o"
+              }
+            },
+            {
+              "name": {
+                "value": "as"
+              }
+            },
+            {
+              "name": {
+                "value": "a"
+              }
+            },
+            {
+              "name": {
+                "value": "para"
+              }
+            },
+            {
+              "name": {
+                "value": "com"
+              }
+            },
+            {
+              "name": {
+                "value": "das"
+              }
+            },
+            {
+              "name": {
+                "value": "da"
+              }
+            },
+            {
+              "name": {
+                "value": "dos"
+              }
+            },
+            {
+              "name": {
+                "value": "do"
+              }
+            }
+          ],
+          "name": "PreposicaoArtigos"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "como"
+              }
+            },
+            {
+              "name": {
+                "value": "quais são"
+              }
+            },
+            {
+              "name": {
+                "value": "qual é"
+              }
+            },
+            {
+              "name": {
+                "value": "quais"
+              }
+            },
+            {
+              "name": {
+                "value": "qual"
+              }
+            }
+          ],
+          "name": "Requisicoes"
         }
       ]
-    }
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "HistoriaIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "campeao",
+              "type": "Campeoes",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1567518656815.611630077499"
+              },
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "Slot.Validation.874445384508.1490863249205.1348305963995"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "DicasAliadosIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "campeao",
+              "type": "Campeoes",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1441304608761.147987331976"
+              },
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "Slot.Validation.1441304608761.147987331976.835940287511"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "DicasContraIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "campeao",
+              "type": "Campeoes",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1292360162223.1596784506882"
+              },
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "Slot.Validation.1292360162223.1596784506882.210337909773"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "HabilidadesIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "campeao",
+              "type": "Campeoes",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.334927735377.1591229289222"
+              },
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "Slot.Validation.334927735377.1591229289222.592377937225"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "PassivaIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "campeao",
+              "type": "Campeoes",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.904790723050.1493231841129"
+              },
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "Slot.Validation.904790723050.1493231841129.923624035154"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "ItemIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "item",
+              "type": "Itens",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1415899295101.1600437518105"
+              },
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "Slot.Validation.1415899295101.1600437518105.1609081800192"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "RunasIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "campeao",
+              "type": "Campeoes",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1105738227178.493201868342"
+              },
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "Slot.Validation.1105738227178.493201868342.572704922074"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "BuildRecomendada",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "campeao",
+              "type": "Campeoes",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.905469298033.205924346507"
+              }
+            }
+          ]
+        },
+        {
+          "name": "ClasseCampeoes",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "campeao",
+              "type": "Campeoes",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.496142875650.1201065648280"
+              }
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Slot.Validation.874445384508.1490863249205.1348305963995",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "pode repetir o nome do campeão?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Não entendi, pode repetir o nome do campeão?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1567518656815.611630077499",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Você quer saber a história de qual campeão?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Qual campeão você deseja saber a história?"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.1441304608761.147987331976.835940287511",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Desculpe, poderia repetir o nome do campeão?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Não entendi, você poderia repetir o nome do campeão?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1292360162223.1596784506882",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Qual é o campeão que você quer aprender a jogar contra ?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Qual é o campeão que você quer dicas para jogar contra?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1441304608761.147987331976",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Qual campeão você deseja recer as dicas?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Qual o nome do campeão que você deseja receber ajuda?"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.1292360162223.1596784506882.210337909773",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Desculpe, pode repetir o nome do campeão?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Não entendi, qual o nome do campeão?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.334927735377.1591229289222",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Qual campeão você deseja saber as habilidades?"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.334927735377.1591229289222.592377937225",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Não entendi, pode repetir o nome do campeão?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Desculpe, qual campeão você quer saber?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.904790723050.1493231841129",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Qual campeão você deseja conhecer a passiva?"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.904790723050.1493231841129.923624035154",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Não entendi, pode repetir o nome do campeão?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Desculpe, pode repetir o nome do campeão?"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.891578476682.1489616277049.776105372022",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Não entendi, pode repetir qual item?"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Intent.616236033686",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "{item}"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.1415899295101.1600437518105.1609081800192",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Desculpe, pode repetir o nome do item?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Não entendi, pode repetir o nome do item?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1415899295101.1600437518105",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Qual item você quer conhecer mais?"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Slot.1415899295101.1600437518105",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Você quer realmente o item {item} ?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1105738227178.493201868342",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Você deseja saber as runas recomendadas de qual campeão?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Qual campeão você quer saber as runas?"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.1105738227178.493201868342.572704922074",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "você poderia repetir o nome do campeão?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Não entendi, pode repetir o nome do campeão?"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Intent.901857755208",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Seu nick é {nick} ?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1242005481189.619791682922",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Qual é o seu nick?"
+          }
+        ]
+      },
+      {
+        "id": "Confirm.Slot.1242005481189.619791682922",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Seu nick é {nick} ?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.905469298033.205924346507",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Qual campeão você quer saber os itens recomendados?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.496142875650.1201065648280",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Desculpe, qual o nome do campeão?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Qual o nome do campeão?"
+          }
+        ]
+      }
+    ]
   },
-  "version": "13"
+  "version": "71"
 }
