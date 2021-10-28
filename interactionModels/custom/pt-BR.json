@@ -52,6 +52,10 @@
               "name": "campeao",
               "type": "Campeoes",
               "samples": [
+                "história do {campeao}",
+                "história da {campeao}",
+                "sobre o {campeao}",
+                "sobre a {campeao}",
                 "quero saber sobre {campeao}",
                 "{campeao}"
               ]
@@ -85,6 +89,8 @@
               "name": "campeao",
               "type": "Campeoes",
               "samples": [
+                "runas do {campeao}",
+                "runas da {campeao}",
                 "quero saber as runas da {campeao}",
                 "quero saber as runas do {campeao}",
                 "{campeao}"
@@ -96,7 +102,9 @@
             "runas",
             "a runa",
             "as runas",
+            "fazer runa",
             "runa {campeao}",
+            "como fazer runa",
             "runas {campeao}",
             "runa do {campeao}",
             "runa da {campeao}",
@@ -105,10 +113,11 @@
             "a runa recomendada",
             "as runas recomendadas",
             "qual é a runa {campeao}",
+            "como fazer runa {campeao}",
             "qual é a runa do {campeao}",
             "qual é a runa da {campeao}",
-            "quais são as runas {campeao}",
             "runa recomendada {campeao}",
+            "quais são as runas {campeao}",
             "runas recomendadas {campeao}",
             "quais são as runas do {campeao}",
             "quais são as runas da {campeao}",
@@ -125,6 +134,8 @@
               "name": "campeao",
               "type": "Campeoes",
               "samples": [
+                "quero da {campeao}",
+                "quero do {campeao}",
                 "quero dicas da {campeao}",
                 "quero dicas do {campeao}",
                 "{campeao}"
@@ -134,29 +145,28 @@
           "samples": [
             "dica",
             "dicas",
-            "dica {campeao}",
-            "dicas {campeao}",
             "a dica",
             "as dicas",
-            "qual é a dica {campeao}",
-            "quais são as dicas {campeao}",
+            "dica {campeao}",
+            "dicas {campeao}",
             "dica do {campeao}",
             "dica da {campeao}",
             "dicas do {campeao}",
             "dicas da {campeao}",
             "a dica dos campeões",
             "as dicas dos campeões",
+            "qual é a dica {campeao}",
             "como jogar de {campeao}",
             "como jogar com {campeao}",
             "como jogar com a {campeao}",
             "como jogar com o {campeao}",
+            "qual é a dica da {campeao}",
+            "qual é a dica do {campeao}",
+            "quais são as dicas {campeao}",
             "me ensine a como jogar de {campeao}",
             "me ensine a como jogar com {campeao}",
             "me ensine a como jogar com a {campeao}",
             "me ensine a como jogar com o {campeao}",
-            "como jogar com o {campeao}",
-            "qual é a dica da {campeao}",
-            "qual é a dica do {campeao}",
             "quais são as dicas para jogar com o {campeao}",
             "quais são as dicas para jogar com a {campeao}"
           ]
@@ -168,6 +178,7 @@
               "name": "campeao",
               "type": "Campeoes",
               "samples": [
+                "dicas contra {campeao}",
                 "Quero jogar contra {campeao}",
                 "{campeao}"
               ]
@@ -176,24 +187,23 @@
           "samples": [
             "dica contra",
             "dicas contra",
-            "dica contra {campeao}",
-            "dicas contra {campeao}",
             "a dica contra",
             "as dicas contra",
-            "qual é a dica contra {campeao}",
-            "quais são as dicas contra {campeao}",
+            "dica contra {campeao}",
+            "dicas contra {campeao}",
+            "a dica contra campeões",
             "dica contra o {campeao}",
             "dica contra a {campeao}",
             "dicas contra o {campeao}",
             "dicas contra a {campeao}",
-            "a dica contra campeões",
             "as dicas contra campeões",
-            "como jogar contra {campeao}",
             "como jogar contra {campeao}",
             "como jogar contra o {campeao}",
             "como jogar contra a {campeao}",
+            "qual é a dica contra {campeao}",
             "qual é a dica contra o {campeao}",
             "qual é a dica contra a {campeao}",
+            "quais são as dicas contra {campeao}",
             "quais são as dicas contra o {campeao}",
             "quais são as dicas contra a {campeao}"
           ]
@@ -205,7 +215,7 @@
               "name": "campeao",
               "type": "Campeoes",
               "samples": [
-                "quero saber sobre {campeao}",
+                "habilidades {campeao}",
                 "{campeao}"
               ]
             }
@@ -213,23 +223,23 @@
           "samples": [
             "habilidade",
             "habilidades",
-            "habilidade {campeao}",
-            "habilidades {campeao}",
             "a habilidade",
             "as habilidades",
-            "qual é a habilidade {campeao}",
-            "qual é a habilidade do {campeao}",
-            "qual é a habilidade da {campeao}",
-            "quais são as habilidades {campeao}",
+            "habilidade {campeao}",
+            "habilidades {campeao}",
             "habilidade do {campeao}",
             "habilidade da {campeao}",
             "habilidades do {campeao}",
             "habilidades da {campeao}",
+            "as habilidades dos campeões",
+            "qual é a habilidade {campeao}",
             "qual é a habilidade do campeão",
             "qual é a habilidade da campeão",
-            "as habilidades dos campeões",
             "qual é a habilidade do {campeao}",
             "qual é a habilidade da {campeao}",
+            "qual é a habilidade do {campeao}",
+            "qual é a habilidade da {campeao}",
+            "quais são as habilidades {campeao}",
             "quais são as habilidades do {campeao}",
             "quais são as habilidades da {campeao}",
             "quais são as habilidades da {campeao}"
@@ -242,6 +252,7 @@
               "name": "campeao",
               "type": "Campeoes",
               "samples": [
+                "passiva {campeao}",
                 "{campeao}"
               ]
             }
@@ -249,20 +260,20 @@
           "samples": [
             "passiva",
             "passivas",
-            "passiva {campeao}",
-            "passivas {campeao}",
             "a passiva",
             "as passivas",
-            "qual é a passiva {campeao}",
-            "quais são as passivas {campeao}",
+            "passiva {campeao}",
+            "passivas {campeao}",
             "passiva do {campeao}",
             "passiva da {campeao}",
             "passivas do {campeao}",
             "passivas da {campeao}",
             "a passiva dos campeões",
             "as passivas dos campeões",
+            "qual é a passiva {campeao}",
             "qual é a passiva do {campeao}",
             "qual é a passiva da {campeao}",
+            "quais são as passivas {campeao}",
             "quais são as passivas do {campeao}",
             "quais são as passivas da {campeao}"
           ]
@@ -284,8 +295,9 @@
             "itens",
             "item {item}",
             "itens {item}",
-            "me fale sobre o item {item}",
-            "o que faz o item {item}"
+            "descreva o item {item}",
+            "o que faz o item {item}",
+            "me fale sobre o item {item}"
           ]
         },
         {
@@ -315,15 +327,15 @@
           "name": "VersaoIntent",
           "slots": [],
           "samples": [
-            "versão",
             "patch",
+            "versão",
+            "patch atual",
             "versão atual",
             "versão do lol",
             "versão do sistema",
-            "patch atual",
             "qual é o patch do lol",
-            "qual é a versão do lol",
             "qual patch do sistema",
+            "qual é a versão do lol",
             "qual é a versão do sistema",
             "qual é o patch atual do lol",
             "qual é a versão atual do lol",
@@ -338,6 +350,8 @@
               "name": "campeao",
               "type": "Campeoes",
               "samples": [
+                "itens {campeao}",
+                "build {campeao}",
                 "{campeao}"
               ]
             }
@@ -345,7 +359,9 @@
           "samples": [
             "item recomendado {campeao}",
             "itens recomendado {campeao}",
-            "itens recomendados {campeao}"
+            "itens recomendados {campeao}",
+            "quais itens recomendados para {campeao}",
+            "quais os itens recomendados para {campeao}"
           ]
         },
         {
@@ -355,6 +371,7 @@
               "name": "campeao",
               "type": "Campeoes",
               "samples": [
+                "classe {campeao}",
                 "{campeao}"
               ]
             }
@@ -363,9 +380,9 @@
             "classe",
             "classificação",
             "classe {campeao}",
-            "classificação {campeao}",
             "classe da {campeao}",
             "classe do {campeao}",
+            "classificação {campeao}",
             "classificação da {campeao}",
             "classificação do {campeao}",
             "qual a classe da {campeao}",
@@ -373,11 +390,27 @@
             "qual a classificação da {campeao}",
             "qual a classificação do {campeao}"
           ]
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
         }
       ],
       "types": [
         {
           "values": [
+            {
+              "id": "711",
+              "name": {
+                "value": "Vex"
+              }
+            },
+            {
+              "id": "166",
+              "name": {
+                "value": "Akshan"
+              }
+            },
             {
               "id": "266",
               "name": {
@@ -2839,7 +2872,7 @@
         "variations": [
           {
             "type": "PlainText",
-            "value": "Qual é o campeão que você quer aprender a jogar contra ?"
+            "value": "Qual é o campeão que você quer aprender a jogar contra?"
           },
           {
             "type": "PlainText",
@@ -2852,11 +2885,11 @@
         "variations": [
           {
             "type": "PlainText",
-            "value": "Qual campeão você deseja recer as dicas?"
+            "value": "Qual campeão você deseja receber as dicas?"
           },
           {
             "type": "PlainText",
-            "value": "Qual o nome do campeão que você deseja receber ajuda?"
+            "value": "Qual campeão você deseja receber ajuda?"
           }
         ]
       },
@@ -3024,6 +3057,10 @@
         "variations": [
           {
             "type": "PlainText",
+            "value": "Qual campeão você deseja saber a build recomendada?"
+          },
+          {
+            "type": "PlainText",
             "value": "Qual campeão você quer saber os itens recomendados?"
           }
         ]
@@ -3033,15 +3070,15 @@
         "variations": [
           {
             "type": "PlainText",
-            "value": "Desculpe, qual o nome do campeão?"
+            "value": "Qual o nome do campeão?"
           },
           {
             "type": "PlainText",
-            "value": "Qual o nome do campeão?"
+            "value": "Qual campeão você deseja saber a classe?"
           }
         ]
       }
     ]
   },
-  "version": "71"
+  "version": "77"
 }

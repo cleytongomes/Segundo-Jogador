@@ -409,7 +409,7 @@ class StopIntentHandler(AbstractRequestHandler):
         msg1 = frase.fim()
         return handler_input.response_builder.speak(msg1).response
 
-# Intenção de Cancelar
+# Intenção de Home
 class HomeIntentHandler(AbstractRequestHandler):
     """Single handler for Cancel and Stop Intent."""
     def can_handle(self, handler_input):
@@ -427,6 +427,27 @@ class HomeIntentHandler(AbstractRequestHandler):
         attr["state"] = ""
         
         return (handler_input.response_builder.speak(msg1).ask(msg2).response)
+
+
+# Sem intenção bem definida
+class FallbackIntentHandler(AbstractRequestHandler):
+    """Fallback Intent."""
+    def can_handle(self, handler_input):
+        # type: (HandlerInput) -> bool
+        return ask_utils.is_intent_name("AMAZON.FallbackIntent")(handler_input)
+
+    def handle(self, handler_input):
+        # type: (HandlerInput) -> Response
+        attr = handler_input.attributes_manager.session_attributes
+        
+        msg1 = "Desculpe, acho que não sei nada sobre isso"
+        msg2 = "Se precisar de ajuda, diga ajuda"
+
+        attr["recent_response"] = msg1
+        attr["state"] = ""
+        
+        return (handler_input.response_builder.speak(msg1).ask(msg2).response)
+
 
 # Fim de Sessão
 class SessionEndedRequestHandler(AbstractRequestHandler):
@@ -508,6 +529,7 @@ sb.add_request_handler(HelpIntentHandler())
 sb.add_request_handler(HomeIntentHandler())
 sb.add_request_handler(StopIntentHandler())
 sb.add_request_handler(CancelIntentHandler())
+sb.add_request_handler(FallbackIntentHandler())
 sb.add_request_handler(SessionEndedRequestHandler())
 sb.add_request_handler(IntentReflectorHandler())
 
