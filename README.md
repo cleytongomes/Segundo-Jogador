@@ -6,5 +6,7 @@ Outro recurso valioso é a leitura de descrição dos items: o Segundo Jogador p
 
 Se você é mais um apaixonado por Runeterra, fique tranquilo, pois temos conteúdo para você também. O Segundo Jogador sabe as histórias de todos os campeões do LoL até o patch atual, e isso pode ser bem interessante para entender mais sobre o universo de Arcane.
 
+Informações adquiridas no [https://developer.riotgames.com/docs/lol](Riot Developer Portal).
+
 ## Download
 [Link Amazon](https://www.amazon.com.br/Desenvolvedor-Segundo-Jogador)
