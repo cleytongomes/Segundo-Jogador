@@ -1,4 +1,4 @@
-# Segundo-Jogador
+# Segundo Jogador
 A Skill Segundo Jogador facilita o acesso as principais informações dos campeões de Summoner's Rift. Com essa skill você poderá saber as habilidades do seu campeão, o nome e a descrição de sua passiva e até mesmo dicas caso você jogue com o campeão ou o encontre na sua partida.
 Além do mais, Segundo Jogador pode te dar umas dicas bem valiosas de como jogar contra um campeão, basta perguntar ; )
 
